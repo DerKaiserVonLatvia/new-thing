@@ -1,0 +1,408 @@
+<html lang="en">
+  <!--
+* PyWebCopy Engine [version 7.0.2]
+* Copyright 2020; Raja Tomar
+* File mirrored from [https://dzvp.netlify.app/]
+* At UTC datetime: [2023-04-26 12:51:51.000706]
+--><head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/DZV_blue-602a3e77.png" sizes="192x192">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>DZVP</title>
+    <link rel="preconnect" href="../fonts.googleapis.com/index.html">
+    <link rel="preconnect" href="../fonts.gstatic.com/index.html">
+    <link href="../fonts.googleapis.com/css2_family_Outfit_wght_400_500_700_display_swap.css" rel="stylesheet">
+    
+    <script src="../flowbite.com/docs/flowbite.js"></script>
+    <script src="../flowbite.com/docs/datepicker.js"></script>
+    <script type="module" src="assets/index-22d8116a.js"></script>
+    <link rel="stylesheet" href="assets/index-200b5a07.css">
+  </head>
+<!--P------------------------------------------------------------------>
+  <body class="bg-bgd text-base text-td selection:bg-tad selection:text-bgd overflow-hidden  ">
+    <div class="h-screen pb-12 sm:pb-0 overflow-y-auto overflow-x-hidden relative scroll-smooth perspective">
+<!--N------------------------------------------------------------------>
+      <nav class="sticky bg-bgd px-2 sm:px-4 py-2.5 z-20 top-0 left-0 border-4 border-t-0 rounded-b-2xl border-tad mx-0 md:mx-14 ">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="https://dzvp.netlify.app/#DZVP" class="flex items-center">
+          <img src="assets/DZV_logo.png" class="h-6 mr-3 sm:h-9">
+          <span class="self-center text-xl font-semibold tdspace-nowrap text-tad">DZVP</span>
+        </a>
+        <div class="flex md:order-2">
+          <button type="button" class="text-tad bg-bgd hover:bg-bgd focus:ring-2 focus:outline-none focus:ring-tad font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"></button>
+          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-tad rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-tad" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 mt-4 border-2  rounded-lg bg-bgd md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-bgd border-tad">
+            <li>
+              <button id="homeButton" onclick="" class="block py-2 pl-3 pr-4 text-bgd bg-tad rounded md:bg-transparent md:text-td md:p-0" aria-current="page">Home</a>
+            </li>
+            <li>
+              <button id="aboutButton" onclick="openAboutPage()" class="block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:p-0 md:hover:text-td text-tmd hover:bg-tad hover:text-bgd ">Par mums</a>
+            </li>
+            <li>
+              <button id="memberListButton" class="block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:p-0 md:hover:text-td text-tmd hover:bg-tad hover:text-bgd ">Parlamenta biedri</button>
+            </li>
+            <li>
+              <button id="commentButton" class="block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:p-0 md:hover:text-td text-tmd hover:bg-tad hover:text-bgd ">Komentāri</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+<!--H------------------------------------------------------------------>
+      <header class="min-h-screen flex flex-col justify-evenly items-center relative preserve-3d bottom-40">
+        <div class="absolute bg-gradient-to-b inset-0 top-3/3 -bottom-32 from-tad/80 to-transparent distance-1"></div>
+        <div class="absolute bg-gradient-to-t inset-0 top-0/3 -bottom-64 from-bgd/80 to-transparent distance-1"></div>
+        <div class="absolute bg-gradient-to-t inset-0 top-0/3 -bottom-80 from-bgd/80 to-transparent distance-1"></div>
+        <div class="absolute bg-gradient-to-t inset-0 top-0/3 -bottom-128 from-bgd/80 to-transparent distance-1"></div>
+        <img class="absolute h-full w-full -z-20 object-cover object-center grayscale distance-1" src="assets/dzvsk-full-269172d7.jpg.jpeg">
+        <h1 class="text-5xl text-center font-bold text-td tracking-wide py-12 drop-shadow-text-sm lg:drop-shadow-text-lg distance-2">
+          DZV<br>
+          Pašpārvalde
+        </h1>
+        <a href="https://dzvsk.lv/" class="bg-tad text-bgd font-medium mb-20 py-3 px-8 rounded-xl border border-bgd focus:outline-none focus-visible:ring-4 ring-tad ring-offset-bgd ring-offset-2 flex items-center space-x-2 drop-shadow-text-sm lg:drop-shadow-text-lg distance-2">
+          <span class="tracking-wide">DZV PAGE</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewbox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92,60h72a48,48,0,0,1,48,48V220a8,8,0,0,1-8,8H52a8,8,0,0,1-8-8V108A48,48,0,0,1,92,60Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path><path d="M84,228V152a16,16,0,0,1,16-16h56a16,16,0,0,1,16,16v76" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path><path d="M96,60V36a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V60" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path><line x1="108" y1="100" x2="148" y2="100" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line><line x1="84" y1="172" x2="172" y2="172" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line><line x1="140" y1="172" x2="140" y2="188" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line></svg>
+        </a>
+      </header>
+<!--M---------------------------------------------------------------
+  
+    _   _ ________          _______       _____ ______ _____ _______ _____ ____  _   _ 
+ | \ | |  ____\ \        / / ____|     / ____|  ____/ ____|__   __|_   _/ __ \| \ | |
+ |  \| | |__   \ \  /\  / / (___      | (___ | |__ | |       | |    | || |  | |  \| |
+ | . ` |  __|   \ \/  \/ / \___ \      \___ \|  __|| |       | |    | || |  | | . ` |
+ | |\  | |____   \  /\  /  ____) |     ____) | |___| |____   | |   _| || |__| | |\  |
+ |_| \_|______|   \/  \/  |_____/     |_____/|______\_____|  |_|  |_____\____/|_| \_|
+                                                                                     
+
+
+
+  --->
+      <main class="relative mt-16 sm:mt-24 lg:mt-40 -mb-96 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden bottom-96">
+        <div class="columns border-4 bg-bgd border-tad rounded-xl mx-4 md:mx-16 lg:mx-28 mt-20 md:mt-20 lg:mt-0 p-5 md:columns-2 lg:columns-3 xl:columns-4 space-y-4">
+          <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
+            <a href="#News">
+              <img class="rounded-t-xs bg-cover w-full" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAH0BAMAAAATfk7nAAAAElBMVEVjaWygp6uXnqFscnaFi494foKjrF/pAAADwklEQVR42u3cTW7iWBgFUCvQC4DgBdgk88jUAgKk5hYR+99Kg3+fiRNslEGr3zmqQVWBB7m6ON97xk4SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/5Z/8UW/xhbVcrx70Gl9Y+0ezWm3iq1b2cFhrYc0gLGEJ69fC2nzMd4g2rN3ibe6fU7RhPfBTC0tYvxnWOc/PwppYp3y1yl+FNUWR9WtCYd3Zn2hGsvVWWPeL1a2ghTW1WJdqvQvrjmW/ztkKa8JkdVkZZfXmjLB+dN0lTHe7ol5CC+vuKatMksV1Cf0urLthpde/PF1iOgrrR9eMntvUtsK6G9axDetZWML6zXPWVljTw3p2gp8eVnWlcC+sSW+8zFftvCWsvkbl1zdeh9H8fM5N8DdZ5Xk5vjbMq6xSC+neZf338nXXob8cexTW8Fy+Hf0c1kphhcWqt0O/qdbfRFiD/YUfqlW9XVhBsUarVaf1mQjr9tM2Uq3dR7b6+EyE1dmHF3Eai+bS6mK32yXC6otVBXUYVutUXdG5nbqEVRUrHf5CXGRfBi9htXP6plwMqvX09RQmrLpD1YReneY3YduGX04WVlust2aToWlTcy16K6xBWF2xkuRPX61m8FqXwgrDOgV3TvTVapc5z8IKwgqKFVSr+5JDWC1hVcuZ9K1/parWNZfN4WZMjT6s5SooVletqm5p9Y9gMo0+rP2gWE213p/qHayqWi/CasJatht7g2q9ZPU5f5kNJtPIw6qnqb83r63W7UezGEymkYdV3BarqVb7v/Wvyq2wxovVTVhpP5u21Yo7rGLsTt6mWsdgCnsVVlOs48irfYR1dO/CKsZvEa/ySZNwaH2JPqzleLHqanUn/WU/mcYc1ulmHg2rFfStr1bEYdXFKsdeP4R96yfTiMPar8JT08BiF2bSjQ/xhvVn9W2xbqPLor8dZWwe/UZbrWjDWs94skw7mZ6ifgjGceL7m42tqMOaflN5PT5EHdZx8gH1+JBFHNacRzscYn9wz+eMI7pvAEYaVjrrkCLusMpZhyyymMNKZx5TxPz8rHLmMU21Il1Izz2o3jMV1ozxQVgzxgdhzaiWsCaKdz/rPF+8+1nzn9idZR7q6qGuwhKWsP7jioezSqPLKniU31xlfGFdbyF8TAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMMG/fdsfz1qcmxsAAAAASUVORK5CYII=">
+            </a>
+            <div class="px-5 pt-5 pb-1">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-td">Lorem Ipsum</h5>
+              <p class="mb-5 font-normal text-tmd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ex at ante facilisis consequat eu vitae purus. Vestibulum volutpat enim sed semper dignissim.</p>
+              <a href="#News" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-bgd  rounded-lg  focus:ring-0 focus:outline-none bg-tad hover:bg-tad focus:ring-tad">
+                Read more
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <hr class="border-2 rounded-md border-tad mt-3 mb-1">
+              <p class="font-normal text-tmd text-xs">
+                23/04/2023
+              </p>
+            </div>
+          </div>
+          <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
+            <a href="#News">
+              <img class="rounded-t-xs bg-cover w-full" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAGQAgMAAAAPW/YLAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAMUExURWNpbH6EiKCnq////59BGKEAAAABYktHRAMRDEzyAAAAB3RJTUUH5wQXEAMWPAQNngAAAqdJREFUeNrt2z2O00AYgOHYhQsfwUfYUxhKKhoajuBT7BGMBA1VigUlPiUzYzsbULJCQmi+SM/TBOzmlT0e/+7hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwkLrlDc/Vsvq3sl6qZT09YNZJlqx/yfp0V9Ws8d6qRtZDZzXT14hZw5IWh8tqyoknXFa5rIiXNeSsMVzWlLPmcFnlzHOMlpVG/I9pOUXLatN47+NldamnWc7xso5pfIXL6nPWtMTLmmX9dVYXcycGHfJ5gmjjZaWknBYk6+P+j3Ty+Rbm5NOdr7LinKqH1+0W6cJmysffXpgfboXIaq6eG+WL5nOMi+acsi8MdIuRd9y4L/2cH1CGyCoH3740zO1r+/pQctpCI2T1y/J9HVxNvn6IkvW0LP06uLr9iAyQlaeHZh1c/X5EBshK08OcJtSXsmR7TRAgqzyieSrbadqPyABZU5rV8yYby1R6DpK1nnnavJ3KTBEkqwytQxlc5SXQHCNrHVXlZ1h+bPNq/axtOOXBla5vpvV/1bPa7eBLv3OaHoZlG3CVs/p9qpqWnympWyurZ217bX0DdM779BQgq7m8dOrW90/rEVA7a5seDuvlzXHfqbWzhuXqPiMXtmWKqJ11GVpl942HbbBVzvrjnif/RHi50l+GVt59p61urp01vN6Jpd23nXfq35D99k56mNe66u983l/diF301W/2P9z6lqat/sTmanq4stR+vnX7U5q0/F3lrPnG8jRFfKmcNd5Ynt+S1c0631wx1f7G5vZXWkPtrOebK7raWXfWVM463V1TNet4Z01fN2u8s6aNmZWmiJBZQ8ysLmZW7TufkFlBv6QM+t2pLFn/R/9W1rFaVtC/xQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHsUvjAe+vIpnw4YAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDQtMjNUMTY6MDM6MTcrMDA6MDD+qFndAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA0LTIzVDE2OjAzOjE3KzAwOjAwj/XhYQAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wNC0yM1QxNjowMzoyMiswMDowMARX6PoAAAAASUVORK5CYII=">
+            </a>
+            <div class="px-5 pt-5 pb-1">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-td">Lorem Ipsum</h5>
+              <p class="mb-5 font-normal text-tmd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ex at ante facilisis consequat eu vitae purus. Vestibulum volutpat enim sed semper dignissim.</p>
+              <a href="#News" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-bgd  rounded-lg  focus:ring-0 focus:outline-none bg-tad hover:bg-tad focus:ring-tad">
+                Read more
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <hr class="border-2 rounded-md border-tad mt-3 mb-1">
+              <p class="font-normal text-tmd text-xs">
+                23/04/2023
+              </p>
+            </div>
+          </div>
+          <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
+            <a href="#News">
+              <img class="rounded-t-xs bg-cover w-full" src="data:image/png;base64,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">
+            </a>
+            <div class="px-5 pt-5 pb-1">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-td">Lorem Ipsum</h5>
+              <p class="mb-5 font-normal text-tmd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ex at ante facilisis consequat eu vitae purus. Vestibulum volutpat enim sed semper dignissim.</p>
+              <a href="#News" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-bgd  rounded-lg  focus:ring-0 focus:outline-none bg-tad hover:bg-tad focus:ring-tad">
+                Read more
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <hr class="border-2 rounded-md border-tad mt-3 mb-1">
+              <p class="font-normal text-tmd text-xs">
+                23/04/2023
+              </p>
+            </div>
+          </div>
+          <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
+            <a href="#News">
+              <img class="rounded-t-xs bg-cover w-full" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAH0BAMAAAATfk7nAAAAElBMVEVjaWygp6uXnqFscnaFi494foKjrF/pAAADwklEQVR42u3cTW7iWBgFUCvQC4DgBdgk88jUAgKk5hYR+99Kg3+fiRNslEGr3zmqQVWBB7m6ON97xk4SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/5Z/8UW/xhbVcrx70Gl9Y+0ezWm3iq1b2cFhrYc0gLGEJ69fC2nzMd4g2rN3ibe6fU7RhPfBTC0tYvxnWOc/PwppYp3y1yl+FNUWR9WtCYd3Zn2hGsvVWWPeL1a2ghTW1WJdqvQvrjmW/ztkKa8JkdVkZZfXmjLB+dN0lTHe7ol5CC+vuKatMksV1Cf0urLthpde/PF1iOgrrR9eMntvUtsK6G9axDetZWML6zXPWVljTw3p2gp8eVnWlcC+sSW+8zFftvCWsvkbl1zdeh9H8fM5N8DdZ5Xk5vjbMq6xSC+neZf338nXXob8cexTW8Fy+Hf0c1kphhcWqt0O/qdbfRFiD/YUfqlW9XVhBsUarVaf1mQjr9tM2Uq3dR7b6+EyE1dmHF3Eai+bS6mK32yXC6otVBXUYVutUXdG5nbqEVRUrHf5CXGRfBi9htXP6plwMqvX09RQmrLpD1YReneY3YduGX04WVlust2aToWlTcy16K6xBWF2xkuRPX61m8FqXwgrDOgV3TvTVapc5z8IKwgqKFVSr+5JDWC1hVcuZ9K1/parWNZfN4WZMjT6s5SooVletqm5p9Y9gMo0+rP2gWE213p/qHayqWi/CasJatht7g2q9ZPU5f5kNJtPIw6qnqb83r63W7UezGEymkYdV3BarqVb7v/Wvyq2wxovVTVhpP5u21Yo7rGLsTt6mWsdgCnsVVlOs48irfYR1dO/CKsZvEa/ySZNwaH2JPqzleLHqanUn/WU/mcYc1ulmHg2rFfStr1bEYdXFKsdeP4R96yfTiMPar8JT08BiF2bSjQ/xhvVn9W2xbqPLor8dZWwe/UZbrWjDWs94skw7mZ6ifgjGceL7m42tqMOaflN5PT5EHdZx8gH1+JBFHNacRzscYn9wz+eMI7pvAEYaVjrrkCLusMpZhyyymMNKZx5TxPz8rHLmMU21Il1Izz2o3jMV1ozxQVgzxgdhzaiWsCaKdz/rPF+8+1nzn9idZR7q6qGuwhKWsP7jioezSqPLKniU31xlfGFdbyF8TAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMMG/fdsfz1qcmxsAAAAASUVORK5CYII=">
+            </a>
+            <div class="px-5 pt-5 pb-1">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-td">Lorem Ipsum</h5>
+              <p class="mb-5 font-normal text-tmd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ex at ante facilisis consequat eu vitae purus. Vestibulum volutpat enim sed semper dignissim.</p>
+              <a href="#News" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-bgd  rounded-lg  focus:ring-0 focus:outline-none bg-tad hover:bg-tad focus:ring-tad">
+                Read more
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <hr class="border-2 rounded-md border-tad mt-3 mb-1">
+              <p class="font-normal text-tmd text-xs">
+                23/04/2023
+              </p>
+            </div>
+          </div>
+          <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
+            <a href="#News">
+              <img class="rounded-t-xs bg-cover w-full" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAH0BAMAAAATfk7nAAAAElBMVEVjaWygp6uXnqFscnaFi494foKjrF/pAAADwklEQVR42u3cTW7iWBgFUCvQC4DgBdgk88jUAgKk5hYR+99Kg3+fiRNslEGr3zmqQVWBB7m6ON97xk4SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/5Z/8UW/xhbVcrx70Gl9Y+0ezWm3iq1b2cFhrYc0gLGEJ69fC2nzMd4g2rN3ibe6fU7RhPfBTC0tYvxnWOc/PwppYp3y1yl+FNUWR9WtCYd3Zn2hGsvVWWPeL1a2ghTW1WJdqvQvrjmW/ztkKa8JkdVkZZfXmjLB+dN0lTHe7ol5CC+vuKatMksV1Cf0urLthpde/PF1iOgrrR9eMntvUtsK6G9axDetZWML6zXPWVljTw3p2gp8eVnWlcC+sSW+8zFftvCWsvkbl1zdeh9H8fM5N8DdZ5Xk5vjbMq6xSC+neZf338nXXob8cexTW8Fy+Hf0c1kphhcWqt0O/qdbfRFiD/YUfqlW9XVhBsUarVaf1mQjr9tM2Uq3dR7b6+EyE1dmHF3Eai+bS6mK32yXC6otVBXUYVutUXdG5nbqEVRUrHf5CXGRfBi9htXP6plwMqvX09RQmrLpD1YReneY3YduGX04WVlust2aToWlTcy16K6xBWF2xkuRPX61m8FqXwgrDOgV3TvTVapc5z8IKwgqKFVSr+5JDWC1hVcuZ9K1/parWNZfN4WZMjT6s5SooVletqm5p9Y9gMo0+rP2gWE213p/qHayqWi/CasJatht7g2q9ZPU5f5kNJtPIw6qnqb83r63W7UezGEymkYdV3BarqVb7v/Wvyq2wxovVTVhpP5u21Yo7rGLsTt6mWsdgCnsVVlOs48irfYR1dO/CKsZvEa/ySZNwaH2JPqzleLHqanUn/WU/mcYc1ulmHg2rFfStr1bEYdXFKsdeP4R96yfTiMPar8JT08BiF2bSjQ/xhvVn9W2xbqPLor8dZWwe/UZbrWjDWs94skw7mZ6ifgjGceL7m42tqMOaflN5PT5EHdZx8gH1+JBFHNacRzscYn9wz+eMI7pvAEYaVjrrkCLusMpZhyyymMNKZx5TxPz8rHLmMU21Il1Izz2o3jMV1ozxQVgzxgdhzaiWsCaKdz/rPF+8+1nzn9idZR7q6qGuwhKWsP7jioezSqPLKniU31xlfGFdbyF8TAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMMG/fdsfz1qcmxsAAAAASUVORK5CYII=">
+            </a>
+            <div class="px-5 pt-5 pb-1">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-td">Lorem Ipsum</h5>
+              <p class="mb-5 font-normal text-tmd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ex at ante facilisis consequat eu vitae purus. Vestibulum volutpat enim sed semper dignissim.</p>
+              <a href="#News" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-bgd  rounded-lg  focus:ring-0 focus:outline-none bg-tad hover:bg-tad focus:ring-tad">
+                Read more
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <hr class="border-2 rounded-md border-tad mt-3 mb-1">
+              <p class="font-normal text-tmd text-xs">
+                23/04/2023
+              </p>
+            </div>
+          </div>
+                    <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
+            <a href="#News">
+              <img class="rounded-t-xs bg-cover w-full" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAH0BAMAAAATfk7nAAAAElBMVEVjaWygp6uXnqFscnaFi494foKjrF/pAAADwklEQVR42u3cTW7iWBgFUCvQC4DgBdgk88jUAgKk5hYR+99Kg3+fiRNslEGr3zmqQVWBB7m6ON97xk4SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/5Z/8UW/xhbVcrx70Gl9Y+0ezWm3iq1b2cFhrYc0gLGEJ69fC2nzMd4g2rN3ibe6fU7RhPfBTC0tYvxnWOc/PwppYp3y1yl+FNUWR9WtCYd3Zn2hGsvVWWPeL1a2ghTW1WJdqvQvrjmW/ztkKa8JkdVkZZfXmjLB+dN0lTHe7ol5CC+vuKatMksV1Cf0urLthpde/PF1iOgrrR9eMntvUtsK6G9axDetZWML6zXPWVljTw3p2gp8eVnWlcC+sSW+8zFftvCWsvkbl1zdeh9H8fM5N8DdZ5Xk5vjbMq6xSC+neZf338nXXob8cexTW8Fy+Hf0c1kphhcWqt0O/qdbfRFiD/YUfqlW9XVhBsUarVaf1mQjr9tM2Uq3dR7b6+EyE1dmHF3Eai+bS6mK32yXC6otVBXUYVutUXdG5nbqEVRUrHf5CXGRfBi9htXP6plwMqvX09RQmrLpD1YReneY3YduGX04WVlust2aToWlTcy16K6xBWF2xkuRPX61m8FqXwgrDOgV3TvTVapc5z8IKwgqKFVSr+5JDWC1hVcuZ9K1/parWNZfN4WZMjT6s5SooVletqm5p9Y9gMo0+rP2gWE213p/qHayqWi/CasJatht7g2q9ZPU5f5kNJtPIw6qnqb83r63W7UezGEymkYdV3BarqVb7v/Wvyq2wxovVTVhpP5u21Yo7rGLsTt6mWsdgCnsVVlOs48irfYR1dO/CKsZvEa/ySZNwaH2JPqzleLHqanUn/WU/mcYc1ulmHg2rFfStr1bEYdXFKsdeP4R96yfTiMPar8JT08BiF2bSjQ/xhvVn9W2xbqPLor8dZWwe/UZbrWjDWs94skw7mZ6ifgjGceL7m42tqMOaflN5PT5EHdZx8gH1+JBFHNacRzscYn9wz+eMI7pvAEYaVjrrkCLusMpZhyyymMNKZx5TxPz8rHLmMU21Il1Izz2o3jMV1ozxQVgzxgdhzaiWsCaKdz/rPF+8+1nzn9idZR7q6qGuwhKWsP7jioezSqPLKniU31xlfGFdbyF8TAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMMG/fdsfz1qcmxsAAAAASUVORK5CYII=">
+            </a>
+            <div class="px-5 pt-5 pb-1">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-td">Lorem Ipsum</h5>
+              <p class="mb-5 font-normal text-tmd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ex at ante facilisis consequat eu vitae purus. Vestibulum volutpat enim sed semper dignissim.</p>
+              <a href="#News" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-bgd  rounded-lg  focus:ring-0 focus:outline-none bg-tad hover:bg-tad focus:ring-tad">
+                Read more
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <hr class="border-2 rounded-md border-tad mt-3 mb-1">
+              <p class="font-normal text-tmd text-xs">
+                23/04/2023
+              </p>
+            </div>
+          </div>
+          <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
+            <a href="#News">
+              <img class="rounded-t-xs bg-cover w-full" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAGQAgMAAAAPW/YLAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAMUExURWNpbH6EiKCnq////59BGKEAAAABYktHRAMRDEzyAAAAB3RJTUUH5wQXEAMWPAQNngAAAqdJREFUeNrt2z2O00AYgOHYhQsfwUfYUxhKKhoajuBT7BGMBA1VigUlPiUzYzsbULJCQmi+SM/TBOzmlT0e/+7hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwkLrlDc/Vsvq3sl6qZT09YNZJlqx/yfp0V9Ws8d6qRtZDZzXT14hZw5IWh8tqyoknXFa5rIiXNeSsMVzWlLPmcFnlzHOMlpVG/I9pOUXLatN47+NldamnWc7xso5pfIXL6nPWtMTLmmX9dVYXcycGHfJ5gmjjZaWknBYk6+P+j3Ty+Rbm5NOdr7LinKqH1+0W6cJmysffXpgfboXIaq6eG+WL5nOMi+acsi8MdIuRd9y4L/2cH1CGyCoH3740zO1r+/pQctpCI2T1y/J9HVxNvn6IkvW0LP06uLr9iAyQlaeHZh1c/X5EBshK08OcJtSXsmR7TRAgqzyieSrbadqPyABZU5rV8yYby1R6DpK1nnnavJ3KTBEkqwytQxlc5SXQHCNrHVXlZ1h+bPNq/axtOOXBla5vpvV/1bPa7eBLv3OaHoZlG3CVs/p9qpqWnympWyurZ217bX0DdM779BQgq7m8dOrW90/rEVA7a5seDuvlzXHfqbWzhuXqPiMXtmWKqJ11GVpl942HbbBVzvrjnif/RHi50l+GVt59p61urp01vN6Jpd23nXfq35D99k56mNe66u983l/diF301W/2P9z6lqat/sTmanq4stR+vnX7U5q0/F3lrPnG8jRFfKmcNd5Ynt+S1c0631wx1f7G5vZXWkPtrOebK7raWXfWVM463V1TNet4Z01fN2u8s6aNmZWmiJBZQ8ysLmZW7TufkFlBv6QM+t2pLFn/R/9W1rFaVtC/xQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHsUvjAe+vIpnw4YAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDQtMjNUMTY6MDM6MTcrMDA6MDD+qFndAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA0LTIzVDE2OjAzOjE3KzAwOjAwj/XhYQAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wNC0yM1QxNjowMzoyMiswMDowMARX6PoAAAAASUVORK5CYII=">
+            </a>
+            <div class="px-5 pt-5 pb-1">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-td">Lorem Ipsum</h5>
+              <p class="mb-5 font-normal text-tmd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ex at ante facilisis consequat eu vitae purus. Vestibulum volutpat enim sed semper dignissim.</p>
+              <a href="#News" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-bgd  rounded-lg  focus:ring-0 focus:outline-none bg-tad hover:bg-tad focus:ring-tad">
+                Read more
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <hr class="border-2 rounded-md border-tad mt-3 mb-1">
+              <p class="font-normal text-tmd text-xs">
+                23/04/2023
+              </p>
+            </div>
+          </div>
+          <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
+            <a href="#News">
+              <img class="rounded-t-xs bg-cover w-full" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAGQAgMAAAAPW/YLAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAMUExURWNpbH6EiKCnq////59BGKEAAAABYktHRAMRDEzyAAAAB3RJTUUH5wQXEAMWPAQNngAAAqdJREFUeNrt2z2O00AYgOHYhQsfwUfYUxhKKhoajuBT7BGMBA1VigUlPiUzYzsbULJCQmi+SM/TBOzmlT0e/+7hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwkLrlDc/Vsvq3sl6qZT09YNZJlqx/yfp0V9Ws8d6qRtZDZzXT14hZw5IWh8tqyoknXFa5rIiXNeSsMVzWlLPmcFnlzHOMlpVG/I9pOUXLatN47+NldamnWc7xso5pfIXL6nPWtMTLmmX9dVYXcycGHfJ5gmjjZaWknBYk6+P+j3Ty+Rbm5NOdr7LinKqH1+0W6cJmysffXpgfboXIaq6eG+WL5nOMi+acsi8MdIuRd9y4L/2cH1CGyCoH3740zO1r+/pQctpCI2T1y/J9HVxNvn6IkvW0LP06uLr9iAyQlaeHZh1c/X5EBshK08OcJtSXsmR7TRAgqzyieSrbadqPyABZU5rV8yYby1R6DpK1nnnavJ3KTBEkqwytQxlc5SXQHCNrHVXlZ1h+bPNq/axtOOXBla5vpvV/1bPa7eBLv3OaHoZlG3CVs/p9qpqWnympWyurZ217bX0DdM779BQgq7m8dOrW90/rEVA7a5seDuvlzXHfqbWzhuXqPiMXtmWKqJ11GVpl942HbbBVzvrjnif/RHi50l+GVt59p61urp01vN6Jpd23nXfq35D99k56mNe66u983l/diF301W/2P9z6lqat/sTmanq4stR+vnX7U5q0/F3lrPnG8jRFfKmcNd5Ynt+S1c0631wx1f7G5vZXWkPtrOebK7raWXfWVM463V1TNet4Z01fN2u8s6aNmZWmiJBZQ8ysLmZW7TufkFlBv6QM+t2pLFn/R/9W1rFaVtC/xQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHsUvjAe+vIpnw4YAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDQtMjNUMTY6MDM6MTcrMDA6MDD+qFndAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA0LTIzVDE2OjAzOjE3KzAwOjAwj/XhYQAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wNC0yM1QxNjowMzoyMiswMDowMARX6PoAAAAASUVORK5CYII=">
+            </a>
+            <div class="px-5 pt-5 pb-1">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-td">Lorem Ipsum</h5>
+              <p class="mb-5 font-normal text-tmd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ex at ante facilisis consequat eu vitae purus. Vestibulum volutpat enim sed semper dignissim.</p>
+              <a href="#News" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-bgd  rounded-lg  focus:ring-0 focus:outline-none bg-tad hover:bg-tad focus:ring-tad">
+                Read more
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <hr class="border-2 rounded-md border-tad mt-3 mb-1">
+              <p class="font-normal text-tmd text-xs">
+                23/04/2023
+              </p>
+            </div>
+          </div>
+          <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
+            <a href="#News">
+              <img class="rounded-t-xs bg-cover w-full" src="data:image/png;base64,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">
+            </a>
+            <div class="px-5 pt-5 pb-1">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-td">Lorem Ipsum</h5>
+              <p class="mb-5 font-normal text-tmd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ex at ante facilisis consequat eu vitae purus. Vestibulum volutpat enim sed semper dignissim.</p>
+              <a href="#News" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-bgd  rounded-lg  focus:ring-0 focus:outline-none bg-tad hover:bg-tad focus:ring-tad">
+                Read more
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <hr class="border-2 rounded-md border-tad mt-3 mb-1">
+              <p class="font-normal text-tmd text-xs">
+                23/04/2023
+              </p>
+            </div>
+          </div>
+          <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
+            <a href="#News">
+              <img class="rounded-t-xs bg-cover w-full" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAGQAgMAAAAPW/YLAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAMUExURWNpbH6EiKCnq////59BGKEAAAABYktHRAMRDEzyAAAAB3RJTUUH5wQXEAMWPAQNngAAAqdJREFUeNrt2z2O00AYgOHYhQsfwUfYUxhKKhoajuBT7BGMBA1VigUlPiUzYzsbULJCQmi+SM/TBOzmlT0e/+7hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwkLrlDc/Vsvq3sl6qZT09YNZJlqx/yfp0V9Ws8d6qRtZDZzXT14hZw5IWh8tqyoknXFa5rIiXNeSsMVzWlLPmcFnlzHOMlpVG/I9pOUXLatN47+NldamnWc7xso5pfIXL6nPWtMTLmmX9dVYXcycGHfJ5gmjjZaWknBYk6+P+j3Ty+Rbm5NOdr7LinKqH1+0W6cJmysffXpgfboXIaq6eG+WL5nOMi+acsi8MdIuRd9y4L/2cH1CGyCoH3740zO1r+/pQctpCI2T1y/J9HVxNvn6IkvW0LP06uLr9iAyQlaeHZh1c/X5EBshK08OcJtSXsmR7TRAgqzyieSrbadqPyABZU5rV8yYby1R6DpK1nnnavJ3KTBEkqwytQxlc5SXQHCNrHVXlZ1h+bPNq/axtOOXBla5vpvV/1bPa7eBLv3OaHoZlG3CVs/p9qpqWnympWyurZ217bX0DdM779BQgq7m8dOrW90/rEVA7a5seDuvlzXHfqbWzhuXqPiMXtmWKqJ11GVpl942HbbBVzvrjnif/RHi50l+GVt59p61urp01vN6Jpd23nXfq35D99k56mNe66u983l/diF301W/2P9z6lqat/sTmanq4stR+vnX7U5q0/F3lrPnG8jRFfKmcNd5Ynt+S1c0631wx1f7G5vZXWkPtrOebK7raWXfWVM463V1TNet4Z01fN2u8s6aNmZWmiJBZQ8ysLmZW7TufkFlBv6QM+t2pLFn/R/9W1rFaVtC/xQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHsUvjAe+vIpnw4YAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDQtMjNUMTY6MDM6MTcrMDA6MDD+qFndAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA0LTIzVDE2OjAzOjE3KzAwOjAwj/XhYQAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wNC0yM1QxNjowMzoyMiswMDowMARX6PoAAAAASUVORK5CYII=">
+            </a>
+            <div class="px-5 pt-5 pb-1">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-td">Lorem Ipsum</h5>
+              <p class="mb-5 font-normal text-tmd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ex at ante facilisis consequat eu vitae purus. Vestibulum volutpat enim sed semper dignissim.</p>
+              <a href="#News" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-bgd  rounded-lg  focus:ring-0 focus:outline-none bg-tad hover:bg-tad focus:ring-tad">
+                Read more
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <hr class="border-2 rounded-md border-tad mt-3 mb-1">
+              <p class="font-normal text-tmd text-xs">
+                23/04/2023
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </main>
+<!--LOAD-IN SECTION------------------------------------------------------------------
+_      ____          _____       _____ _   _    _____ ______ _____ _______ _____ ____  _   _ 
+| |    / __ \   /\   |  __ \     |_   _| \ | |  / ____|  ____/ ____|__   __|_   _/ __ \| \ | |
+| |   | |  | | /  \  | |  | |______| | |  \| | | (___ | |__ | |       | |    | || |  | |  \| |
+| |   | |  | |/ /\ \ | |  | |______| | | . ` |  \___ \|  __|| |       | |    | || |  | | . ` |
+| |___| |__| / ____ \| |__| |     _| |_| |\  |  ____) | |___| |____   | |   _| || |__| | |\  |
+|______\____/_/    \_\_____/     |_____|_| \_| |_____/|______\_____|  |_|  |_____\____/|_| \_|                                                                                          
+--->
+
+<div id="loadInSection" class="columns border-4 bg-bgd border-tad rounded-xl mx-4 md:mx-16 lg:mx-28 mt-20 md:mt-20 lg:mt-0 p-5 md:columns-2 lg:columns-3 xl:columns-4 space-y-4">
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--F---------------------------------------------------------------
+
+   ______ ____   ____ _______ ______ _____        _____ ______ _____ _______ _____ ____  _   _ 
+ |  ____/ __ \ / __ \__   __|  ____|  __ \      / ____|  ____/ ____|__   __|_   _/ __ \| \ | |
+ | |__ | |  | | |  | | | |  | |__  | |__) |    | (___ | |__ | |       | |    | || |  | |  \| |
+ |  __|| |  | | |  | | | |  |  __| |  _  /      \___ \|  __|| |       | |    | || |  | | . ` |
+ | |   | |__| | |__| | | |  | |____| | \ \      ____) | |___| |____   | |   _| || |__| | |\  |
+ |_|    \____/ \____/  |_|  |______|_|  \_\    |_____/|______\_____|  |_|  |_____\____/|_| \_|
+                                                                                              
+                                                                                              
+
+  --->
+
+      <footer class="relative border-t border-tasd mt-16 sm:mt-24 lg:mt-40 py-6 sm:py-8 md:py-12">
+        <div class="container flex flex-wrap md:justify-between items-center md:items-start gap-12">
+          <div class="grid gap-2 grow justify-items-center md:justify-items-start basis-full md:basis-1/4">
+            <a href="#DZVP" class="flex items-center">
+              <img src="assets/DZV_logo.png" class="h-6 mr-3 sm:h-9">
+              <span class="self-center text-xl font-semibold tdspace-nowrap text-tad">DZVP</span>
+            </a>
+          </div>
+          <nav aria-label="Secondary navigation" class="text-sm flex flex-col items-center sm:items-start sm:flex-row text-center sm:text-left gap-6 justify-between md:justify-around grow basis-full md:basis-1/2 mt-2">
+            <div class="grid gap-3">
+              <p class="font-bold underline decoration-tad decoration-2 underline-offset-2 tracking-wide px-2">About</p>
+              <ul aria-label="Traverse Locations">
+                <li>
+                  <a href="#About%20Us" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#News" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    News
+                  </a>
+                </li>
+                <li>
+                  <a href="#Info" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    Info
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid gap-3">
+              <p class="font-bold underline decoration-tad decoration-2 underline-offset-2 tracking-wide px-2">Contact Us</p>
+              <ul aria-label="Contact Traverse">
+                <li>
+                  <a href="#Twitter" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="#Email" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    Email
+                  </a>
+                </li>
+                <li>
+                  <a href="#Telegram" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    Telegram
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid gap-3">
+              <p class="font-bold underline decoration-tad decoration-2 underline-offset-2 tracking-wide px-2">Licenced</p>
+              <ul aria-label="About Traverse">
+                <li>
+                  <a href="#License%20(EULA)" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    License (EULA)
+                  </a>
+                </li>
+                <li>
+                  <a href="#Privacy%20Policy" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#Terms%20&amp;%20Conditions" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    Terms &amp; Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <hr class="w-auto my-6 border-tad sm:mx-auto lg:my-8 container">
+        <div class="container flex flex-wrap md:justify-between items-center md:items-start gap-12 flex-col sm:flex-row">
+          <div class="grid gap-3">
+            <span class="text-sm text-tmd self-center  tdspace-nowrap">&#169; 2022 Zeftor&#8482, Zobi&#8482;.</span>
+          </div>
+          <div class="flex mt-4 space-x-6 ms:justify-between text-tmd">
+            <a href="#Tw">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewbox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,88c0-22,18.5-40.3,40.5-40a40,40,0,0,1,36.2,24H240l-32.3,32.3A127.9,127.9,0,0,1,80,224c-32,0-40-12-40-12s32-12,48-36c0,0-64-32-48-120,0,0,40,40,88,48Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path></svg>
+            </a>
+            <a href="#Em">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewbox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="224 56 128 144 32 56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline><path d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56a0,0,0,0,1,0,0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path><line x1="110.5" y1="128" x2="34.5" y2="197.7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line><line x1="221.5" y1="197.7" x2="145.5" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line></svg>
+            </a>
+            <a href="#Te">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewbox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M88,134.9,177.9,214a8,8,0,0,0,13.1-4.2L228.6,45.6a8,8,0,0,0-10.7-9.2L33.3,108.9c-7.4,2.9-6.4,13.7,1.4,15.3Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path><line x1="88" y1="134.9" x2="224.1" y2="36.6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line><path d="M132.9,174.4l-31.2,31.2A8,8,0,0,1,88,200V134.9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path></svg>
+            </a>
+          </div>
+        </div>   
+      </footer> 
+      </div>
+
+      <script src="script.js"></script>
+
+
+  </body>
+</html>
